@@ -1,200 +1,200 @@
 Tally N.,Tally Description,Energy,Value,Error
-4,Neutron Spectra,1e-07,5.05801e-06,2.32652e-06
-4,Neutron Spectra,4.1399e-07,3.27199e-05,4.81799e-06
-4,Neutron Spectra,5.3158e-07,9.93535e-06,1.54591e-06
-4,Neutron Spectra,6.825599999999999e-07,1.77118e-05,2.6286e-06
-4,Neutron Spectra,8.7643e-07,2.08801e-05,2.59101e-06
-4,Neutron Spectra,1.1252999999999998e-06,2.88098e-05,3.58805e-06
-4,Neutron Spectra,1.445e-06,3.6706e-05,3.25611e-06
-4,Neutron Spectra,1.8553999999999998e-06,4.90609e-05,4.29781e-06
-4,Neutron Spectra,2.3824e-06,6.04343e-05,4.83264e-06
-4,Neutron Spectra,3.059e-06,7.45902e-05,5.01142e-06
-4,Neutron Spectra,3.9279e-06,0.000106848,5.57593e-06
-4,Neutron Spectra,5.043499999999999e-06,0.00012846,6.30485e-06
-4,Neutron Spectra,6.4759e-06,0.000168812,7.20044e-06
-4,Neutron Spectra,8.3153e-06,0.000228181,9.17656e-06
-4,Neutron Spectra,1.0677e-05,0.000289643,9.98127e-06
-4,Neutron Spectra,1.3710000000000001e-05,0.000378825,1.00646e-05
-4,Neutron Spectra,1.7604e-05,0.00048475,1.37117e-05
-4,Neutron Spectra,2.2603e-05,0.000640583,1.67365e-05
-4,Neutron Spectra,2.9023e-05,0.000826446,1.7102e-05
-4,Neutron Spectra,3.7266e-05,0.00104342,1.81675e-05
-4,Neutron Spectra,4.7851e-05,0.00132821,2.1686e-05
-4,Neutron Spectra,6.1442e-05,0.00170071,2.51286e-05
-4,Neutron Spectra,7.889299999999999e-05,0.00216738,2.49883e-05
-4,Neutron Spectra,0.0001013,0.00280868,3.17684e-05
-4,Neutron Spectra,0.00013006999999999998,0.00352982,3.90086e-05
-4,Neutron Spectra,0.00016702,0.00453246,3.71907e-05
-4,Neutron Spectra,0.00021444999999999998,0.00579742,4.54266e-05
-4,Neutron Spectra,0.00027536,0.00750805,5.43477e-05
-4,Neutron Spectra,0.00035358,0.00942661,5.98546e-05
-4,Neutron Spectra,0.000454,0.0121223,6.20441e-05
-4,Neutron Spectra,0.00058295,0.015195,7.4087e-05
-4,Neutron Spectra,0.0007485199999999999,0.0194503,7.6751e-05
-4,Neutron Spectra,0.00096112,0.0246495,8.33661e-05
-4,Neutron Spectra,0.0012341,0.0311897,8.99661e-05
-4,Neutron Spectra,0.0015845999999999998,0.0393497,0.000110013
-4,Neutron Spectra,0.0020347,0.0501467,0.000133573
-4,Neutron Spectra,0.0022486999999999997,0.0235009,7.30818e-05
-4,Neutron Spectra,0.0024852,0.0258799,9.72363e-05
-4,Neutron Spectra,0.0026125999999999996,0.0139087,6.44695e-05
-4,Neutron Spectra,0.0027465,0.0145184,6.25771e-05
-4,Neutron Spectra,0.0030354,0.0314049,9.28987e-05
-4,Neutron Spectra,0.0033545999999999997,0.0344453,9.92426e-05
-4,Neutron Spectra,0.0037074,0.0378658,9.46707e-05
-4,Neutron Spectra,0.004307399999999999,0.064055,0.000150482
-4,Neutron Spectra,0.0055308,0.128849,0.000206735
-4,Neutron Spectra,0.0071017,0.163837,0.000205688
-4,Neutron Spectra,0.009118799999999998,0.206829,0.00028369
-4,Neutron Spectra,0.010595,0.149435,0.000224648
-4,Neutron Spectra,0.011708999999999999,0.111767,0.000175937
-4,Neutron Spectra,0.015033999999999999,0.330322,0.000331571
-4,Neutron Spectra,0.019303999999999998,0.417213,0.000350403
-4,Neutron Spectra,0.021875,0.247659,0.000286291
-4,Neutron Spectra,0.023579,0.162933,0.000226214
-4,Neutron Spectra,0.024176,0.0569178,0.000132137
-4,Neutron Spectra,0.024787999999999998,0.0580863,0.0001264
-4,Neutron Spectra,0.026057999999999998,0.120569,0.000207239
-4,Neutron Spectra,0.027,0.0890592,0.000153561
-4,Neutron Spectra,0.028501,0.141287,0.000195564
-4,Neutron Spectra,0.031827999999999995,0.312484,0.000292477
-4,Neutron Spectra,0.034307,0.230456,0.000252107
-4,Neutron Spectra,0.040868,0.6026,0.000518648
-4,Neutron Spectra,0.046308999999999996,0.494642,0.000403747
-4,Neutron Spectra,0.052475,0.563539,0.000413209
-4,Neutron Spectra,0.056561999999999994,0.378783,0.000322016
-4,Neutron Spectra,0.06738,1.03013,0.00062696
-4,Neutron Spectra,0.07202399999999999,0.45593,0.000339511
-4,Neutron Spectra,0.079499,0.755242,0.00046998
-4,Neutron Spectra,0.08250299999999999,0.312062,0.000311568
-4,Neutron Spectra,0.086517,0.425797,0.00032006
-4,Neutron Spectra,0.098036,1.27412,0.000637757
-4,Neutron Spectra,0.11109,1.55004,0.000767773
-4,Neutron Spectra,0.11678999999999999,0.705823,0.000435608
-4,Neutron Spectra,0.12276999999999999,0.767991,0.00050513
-4,Neutron Spectra,0.12907,0.848483,0.000507
-4,Neutron Spectra,0.13569,0.937207,0.000469426
-4,Neutron Spectra,0.14264,1.03203,0.00058315
-4,Neutron Spectra,0.14995999999999998,1.12948,0.000571329
-4,Neutron Spectra,0.15764,1.21275,0.000562828
-4,Neutron Spectra,0.16573,1.28211,0.000592015
-4,Neutron Spectra,0.17421999999999999,1.32063,0.000605451
-4,Neutron Spectra,0.18316,1.32545,0.000635256
-4,Neutron Spectra,0.19255,1.23364,0.000557115
-4,Neutron Spectra,0.20242,1.0968,0.000535902
-4,Neutron Spectra,0.2128,0.905792,0.0004271
-4,Neutron Spectra,0.22371,0.70299,0.000400484
-4,Neutron Spectra,0.23518,0.43659,0.000204541
-4,Neutron Spectra,0.24724,0.236042,0.000154547
-4,Neutron Spectra,0.27324,0.242807,0.000109125
-4,Neutron Spectra,0.28725,0.181635,0.000104081
-4,Neutron Spectra,0.29452,0.128551,0.0001079
-4,Neutron Spectra,0.29721,0.054254,7.9667e-05
-4,Neutron Spectra,0.29849,0.0273249,5.98385e-05
-4,Neutron Spectra,0.30196999999999996,0.0792112,0.000100157
-4,Neutron Spectra,0.33372999999999997,0.937551,0.00041137
-4,Neutron Spectra,0.36883,1.3081,0.000535222
-4,Neutron Spectra,0.38774,0.750557,0.000411717
-4,Neutron Spectra,0.40762,0.806651,0.000465963
-4,Neutron Spectra,0.45049,1.74786,0.000616492
-4,Neutron Spectra,0.49787,1.92492,0.000733215
-4,Neutron Spectra,0.5234,1.02527,0.000560908
-4,Neutron Spectra,0.55023,1.05838,0.000567276
-4,Neutron Spectra,0.57844,1.09054,0.000548024
-4,Neutron Spectra,0.6081,1.11898,0.000585231
-4,Neutron Spectra,0.63928,1.14614,0.000539075
-4,Neutron Spectra,0.67206,1.17068,0.000548426
-4,Neutron Spectra,0.70651,1.18949,0.000587914
-4,Neutron Spectra,0.74274,1.19663,0.000607637
-4,Neutron Spectra,0.78082,1.1921,0.000609021
-4,Neutron Spectra,0.82085,1.17281,0.000501987
-4,Neutron Spectra,0.8629399999999999,1.14936,0.000585561
-4,Neutron Spectra,0.90718,1.11909,0.000500684
-4,Neutron Spectra,0.9616699999999999,1.2637,0.00061069
-4,Neutron Spectra,1.0026,0.87422,0.000455681
-4,Neutron Spectra,1.1079999999999999,2.03517,0.00070117
-4,Neutron Spectra,1.1648,1.00415,0.000458384
-4,Neutron Spectra,1.2246,1.00777,0.000494395
-4,Neutron Spectra,1.2873999999999999,1.01332,0.000421399
-4,Neutron Spectra,1.3534,1.02326,0.000449262
-4,Neutron Spectra,1.4226999999999999,1.0326,0.000500868
-4,Neutron Spectra,1.4957,1.05187,0.000448918
-4,Neutron Spectra,1.5724,1.07294,0.000517026
-4,Neutron Spectra,1.653,1.09509,0.000489983
-4,Neutron Spectra,1.7377,1.11631,0.000470281
-4,Neutron Spectra,1.8268,1.12687,0.000516613
-4,Neutron Spectra,1.9204999999999999,1.12126,0.000522794
-4,Neutron Spectra,2.019,1.10387,0.000515208
-4,Neutron Spectra,2.1225,1.07555,0.000469938
-4,Neutron Spectra,2.2313,1.04588,0.000436274
-4,Neutron Spectra,2.3068999999999997,0.68093,0.000359088
-4,Neutron Spectra,2.3457,0.33551,0.000283237
-4,Neutron Spectra,2.3653,0.166213,0.000189523
-4,Neutron Spectra,2.3851,0.16563,0.000198188
-4,Neutron Spectra,2.4659999999999997,0.654427,0.000371963
-4,Neutron Spectra,2.5924,0.957905,0.00036807
-4,Neutron Spectra,2.7253,0.933829,0.000396521
-4,Neutron Spectra,2.8649999999999998,0.911536,0.000432486
-4,Neutron Spectra,3.0119,0.889191,0.000403137
-4,Neutron Spectra,3.1664,0.862149,0.000411418
-4,Neutron Spectra,3.3287,0.832501,0.000393534
-4,Neutron Spectra,3.6788,1.56539,0.000538545
-4,Neutron Spectra,4.0657,1.41377,0.000522574
-4,Neutron Spectra,4.4933,1.29778,0.000500088
-4,Neutron Spectra,4.7237,0.646355,0.000359532
-4,Neutron Spectra,4.9658,0.664206,0.000312443
-4,Neutron Spectra,5.2204999999999995,0.69537,0.000386735
-4,Neutron Spectra,5.488099999999999,0.749264,0.000399514
-4,Neutron Spectra,5.7695,0.774254,0.000415375
-4,Neutron Spectra,6.0653,0.775192,0.000391203
-4,Neutron Spectra,6.3763,0.798414,0.000418568
-4,Neutron Spectra,6.5924,0.547397,0.000342359
-4,Neutron Spectra,6.7032,0.277688,0.000214754
-4,Neutron Spectra,7.0469,0.849073,0.000466643
-4,Neutron Spectra,7.4082,0.875732,0.00048484
-4,Neutron Spectra,7.787999999999999,0.901604,0.000414182
-4,Neutron Spectra,8.1873,0.920122,0.000463391
-4,Neutron Spectra,8.607099999999999,0.944805,0.000451979
-4,Neutron Spectra,9.048399999999999,0.966101,0.000436969
-4,Neutron Spectra,9.5123,0.983771,0.000492931
-4,Neutron Spectra,10.0,1.00505,0.000530754
-4,Neutron Spectra,10.513,1.03039,0.000448374
-4,Neutron Spectra,11.052,1.06046,0.000487539
-4,Neutron Spectra,11.618,1.09096,0.000506415
-4,Neutron Spectra,12.213999999999999,1.11113,0.000543551
-4,Neutron Spectra,12.523,0.553472,0.000406698
-4,Neutron Spectra,12.84,0.543452,0.000350461
-4,Neutron Spectra,13.498999999999999,1.01336,0.000496529
-4,Neutron Spectra,13.84,0.434635,0.000324409
-4,Neutron Spectra,14.190999999999999,0.175766,0.000180963
-4,Neutron Spectra,14.549999999999999,0.0,0.0
-4,Neutron Spectra,14.918,0.0,0.0
-4,Neutron Spectra,15.683,0.0,0.0
-4,Neutron Spectra,16.487,0.0,0.0
-4,Neutron Spectra,16.904999999999998,0.0,0.0
-4,Neutron Spectra,17.332,0.0,0.0
-4,Neutron Spectra,19.64,0.0,0.0
-14,Photon Spectra,0.01,0.00292097,1.79593e-05
-14,Photon Spectra,0.02,0.282149,0.000486807
-14,Photon Spectra,0.049999999999999996,4.20107,0.00222027
-14,Photon Spectra,0.09999999999999999,6.04428,0.00206754
-14,Photon Spectra,0.19999999999999998,7.40683,0.00188207
-14,Photon Spectra,0.3,3.34206,0.00109543
-14,Photon Spectra,0.39999999999999997,2.20707,0.000777385
-14,Photon Spectra,0.6,10.3042,0.00187333
-14,Photon Spectra,0.7999999999999999,0.000101607,5.50703e-06
-14,Photon Spectra,1.0,0.000219747,8.52437e-06
-14,Photon Spectra,1.22,0.000146582,7.54788e-06
-14,Photon Spectra,1.44,6.45328e-05,4.76569e-06
-14,Photon Spectra,1.66,5.17565e-05,4.31729e-06
-14,Photon Spectra,2.0,7.64192e-05,5.39218e-06
-14,Photon Spectra,2.5,0.00115648,2.4263e-05
-14,Photon Spectra,3.0,0.000114266,5.86022e-06
-14,Photon Spectra,4.0,0.00011093,6.40236e-06
-14,Photon Spectra,5.0,5.70564e-05,4.68938e-06
-14,Photon Spectra,6.5,3.81509e-05,4.10553e-06
-14,Photon Spectra,8.0,3.48829e-05,4.36189e-06
-14,Photon Spectra,10.0,3.30492e-05,3.76404e-06
-14,Photon Spectra,12.0,3.97745e-05,4.22314e-06
-14,Photon Spectra,14.0,2.41989e-05,3.18896e-06
-14,Photon Spectra,20.0,1.08975e-06,5.70483e-07
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1e-07,5.05801e-06,2.32652e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.1399e-07,3.27199e-05,4.81799e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,5.3158e-07,9.93535e-06,1.54591e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.825599999999999e-07,1.77118e-05,2.6286e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,8.7643e-07,2.08801e-05,2.59101e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.1252999999999998e-06,2.88098e-05,3.58805e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.445e-06,3.6706e-05,3.25611e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.8554e-06,4.90609e-05,4.29781e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.3824e-06,6.04343e-05,4.83264e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.059e-06,7.45902e-05,5.01142e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.9279e-06,0.000106848,5.57593e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,5.043499999999999e-06,0.00012846,6.30485e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.4759e-06,0.000168812,7.20044e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,8.3153e-06,0.000228181,9.17656e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.0677e-05,0.000289643,9.98127e-06
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.371e-05,0.000378825,1.00646e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.7604e-05,0.00048475,1.37117e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.2603e-05,0.000640583,1.67365e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.9023e-05,0.000826446,1.7102e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.7266e-05,0.00104342,1.81675e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.7851e-05,0.00132821,2.1686e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.1442e-05,0.00170071,2.51286e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,7.889299999999999e-05,0.00216738,2.49883e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0001013,0.00280868,3.17684e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0001300699999999,0.00352982,3.90086e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.00016702,0.00453246,3.71907e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0002144499999999,0.00579742,4.54266e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.00027536,0.00750805,5.43477e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.00035358,0.00942661,5.98546e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.000454,0.0121223,6.20441e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.00058295,0.015195,7.4087e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0007485199999999,0.0194503,7.6751e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.00096112,0.0246495,8.33661e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0012341,0.0311897,8.99661e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0015845999999999,0.0393497,0.000110013
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0020347,0.0501467,0.000133573
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0022486999999999,0.0235009,7.30818e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0024852,0.0258799,9.72363e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0026125999999999,0.0139087,6.44695e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0027465,0.0145184,6.25771e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0030354,0.0314049,9.28987e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0033545999999999,0.0344453,9.92426e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0037074,0.0378658,9.46707e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0043073999999999,0.064055,0.000150482
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0055308,0.128849,0.000206735
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0071017,0.163837,0.000205688
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0091187999999999,0.206829,0.00028369
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.010595,0.149435,0.000224648
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0117089999999999,0.111767,0.000175937
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0150339999999999,0.330322,0.000331571
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0193039999999999,0.417213,0.000350403
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.021875,0.247659,0.000286291
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.023579,0.162933,0.000226214
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.024176,0.0569178,0.000132137
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0247879999999999,0.0580863,0.0001264
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0260579999999999,0.120569,0.000207239
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.027,0.0890592,0.000153561
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.028501,0.141287,0.000195564
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0318279999999999,0.312484,0.000292477
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.034307,0.230456,0.000252107
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.040868,0.6026,0.000518648
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0463089999999999,0.494642,0.000403747
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.052475,0.563539,0.000413209
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0565619999999999,0.378783,0.000322016
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.06738,1.03013,0.00062696
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0720239999999999,0.45593,0.000339511
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.079499,0.755242,0.00046998
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.0825029999999999,0.312062,0.000311568
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.086517,0.425797,0.00032006
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.098036,1.27412,0.000637757
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.11109,1.55004,0.000767773
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.1167899999999999,0.705823,0.000435608
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.1227699999999999,0.767991,0.00050513
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.12907,0.848483,0.000507
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.13569,0.937207,0.000469426
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.14264,1.03203,0.00058315
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.1499599999999999,1.12948,0.000571329
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.15764,1.21275,0.000562828
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.16573,1.28211,0.000592015
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.1742199999999999,1.32063,0.000605451
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.18316,1.32545,0.000635256
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.19255,1.23364,0.000557115
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.20242,1.0968,0.000535902
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.2128,0.905792,0.0004271
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.22371,0.70299,0.000400484
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.23518,0.43659,0.000204541
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.24724,0.236042,0.000154547
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.27324,0.242807,0.000109125
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.28725,0.181635,0.000104081
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.29452,0.128551,0.0001079
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.29721,0.054254,7.9667e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.29849,0.0273249,5.98385e-05
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.3019699999999999,0.0792112,0.000100157
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.3337299999999999,0.937551,0.00041137
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.36883,1.3081,0.000535222
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.38774,0.750557,0.000411717
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.40762,0.806651,0.000465963
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.45049,1.74786,0.000616492
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.49787,1.92492,0.000733215
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.5234,1.02527,0.000560908
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.55023,1.05838,0.000567276
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.57844,1.09054,0.000548024
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.6081,1.11898,0.000585231
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.63928,1.14614,0.000539075
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.67206,1.17068,0.000548426
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.70651,1.18949,0.000587914
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.74274,1.19663,0.000607637
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.78082,1.1921,0.000609021
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.82085,1.17281,0.000501987
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.8629399999999999,1.14936,0.000585561
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.90718,1.11909,0.000500684
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,0.96167,1.2637,0.00061069
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.0026,0.87422,0.000455681
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.108,2.03517,0.00070117
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.1648,1.00415,0.000458384
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.2246,1.00777,0.000494395
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.2874,1.01332,0.000421399
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.3534,1.02326,0.000449262
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.4227,1.0326,0.000500868
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.4957,1.05187,0.000448918
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.5724,1.07294,0.000517026
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.653,1.09509,0.000489983
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.7377,1.11631,0.000470281
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.8268,1.12687,0.000516613
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,1.9205,1.12126,0.000522794
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.019,1.10387,0.000515208
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.1225,1.07555,0.000469938
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.2313,1.04588,0.000436274
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.3069,0.68093,0.000359088
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.3457,0.33551,0.000283237
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.3653,0.166213,0.000189523
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.3851,0.16563,0.000198188
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.466,0.654427,0.000371963
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.5924,0.957905,0.00036807
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.7253,0.933829,0.000396521
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,2.865,0.911536,0.000432486
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.0119,0.889191,0.000403137
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.1664,0.862149,0.000411418
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.3287,0.832501,0.000393534
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,3.6788,1.56539,0.000538545
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.0657,1.41377,0.000522574
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.4933,1.29778,0.000500088
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.7237,0.646355,0.000359532
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,4.9658,0.664206,0.000312443
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,5.2205,0.69537,0.000386735
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,5.488099999999999,0.749264,0.000399514
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,5.7695,0.774254,0.000415375
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.0653,0.775192,0.000391203
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.3763,0.798414,0.000418568
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.5924,0.547397,0.000342359
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,6.7032,0.277688,0.000214754
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,7.0469,0.849073,0.000466643
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,7.4082,0.875732,0.00048484
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,7.787999999999999,0.901604,0.000414182
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,8.1873,0.920122,0.000463391
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,8.607099999999999,0.944805,0.000451979
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,9.0484,0.966101,0.000436969
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,9.5123,0.983771,0.000492931
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,10.0,1.00505,0.000530754
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,10.513,1.03039,0.000448374
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,11.052,1.06046,0.000487539
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,11.618,1.09096,0.000506415
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,12.214,1.11113,0.000543551
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,12.523,0.553472,0.000406698
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,12.84,0.543452,0.000350461
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,13.499,1.01336,0.000496529
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,13.84,0.434635,0.000324409
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,14.191,0.175766,0.000180963
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,14.55,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,14.918,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,15.683,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,16.487,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,16.904999999999998,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,17.332,0.0,0.0
+4,Neutron Flux at the external surface in Vitamin-J 175 energy groups,19.64,0.0,0.0
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.01,0.00292097,1.79593e-05
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.02,0.282149,0.000486807
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.0499999999999999,4.20107,0.00222027
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.0999999999999999,6.04428,0.00206754
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.1999999999999999,7.40683,0.00188207
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.3,3.34206,0.00109543
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.3999999999999999,2.20707,0.000777385
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.6,10.3042,0.00187333
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],0.7999999999999999,0.000101607,5.50703e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],1.0,0.000219747,8.52437e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],1.22,0.000146582,7.54788e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],1.44,6.45328e-05,4.76569e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],1.66,5.17565e-05,4.31729e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],2.0,7.64192e-05,5.39218e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],2.5,0.00115648,2.4263e-05
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],3.0,0.000114266,5.86022e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],4.0,0.00011093,6.40236e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],5.0,5.70564e-05,4.68938e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],6.5,3.81509e-05,4.10553e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],8.0,3.48829e-05,4.36189e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],10.0,3.30492e-05,3.76404e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],12.0,3.97745e-05,4.22314e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],14.0,2.41989e-05,3.18896e-06
+14,Gamma flux at the external surface [FINE@FISPACT MANUAL 24 Group Structure],20.0,1.08975e-06,5.70483e-07
