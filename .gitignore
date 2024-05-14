@@ -1,1 +1,4 @@
 utils.ipynb
+.vscode/
+*.pyc
+.pytest_cache/
