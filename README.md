@@ -28,4 +28,7 @@ Some sanity checks are performed on the `metadata.json` keywords and values to e
 
 ### Exceptions
 #### Tiara-BS
-The .csv raw data structure in this benchmark is not compatible with JADE results. To correclty import them into this repository use this [script](./utils/import_tiara_bs.py). 
+The .csv raw data structure in this benchmark is not compatible with JADE results. To correctly import them into this repository use this [import_tiara_bs.py](./utils/import_tiara_bs.py). 
+
+#### Tiara-FC
+The .csv raw data structure in this benchmark is not compatible with JADE results. To correctly import them into this repository use this [import_tiara_fc.py](./utils/import_tiara_fc.py). 
