@@ -18,25 +18,38 @@ DEST = (
     r"D:\DATA\laghida\Documents\GitHub\JADE-RAW-RESULTS\ROOT\32c\Tiara-BS\mcnp\Raw_Data"
 )
 
-# dictionary for .csv
-tallies = {"14": "Bare", "24": "15 mm", "34": "30 mm", "44": "50 mm", "54": "90 mm"}
-thicknesses = {
-    "cc": {"43": ["25-40", "50-40", "100-00", "150-00"], "68": ["50-00", "100-00"]},
-    "fe": {"43": ["20-00", "40-00", "100-00"], "68": ["20-00", "40-00", "100-00"]},
-}
+
+def import_bs(source: os.PathLike, dest: os.PathLike) -> None:
+    """Import the Tiara-BS benchmark from JADE results to the WebbApp format.
+
+    Parameters
+    ----------
+    source : os.PathLike
+        original path to the JADE raw data .csv files.
+    dest : os.PathLike
+        destination path to the WebbApp format.
+    """
+    # dictionary for .csv
+    tallies = {"14": "Bare", "24": "15 mm", "34": "30 mm", "44": "50 mm", "54": "90 mm"}
+    thicknesses = {
+        "cc": {"43": ["25-40", "50-40", "100-00", "150-00"], "68": ["50-00", "100-00"]},
+        "fe": {"43": ["20-00", "40-00", "100-00"], "68": ["20-00", "40-00", "100-00"]},
+    }
+    for material in ["cc", "fe"]:
+        for energy in ["43", "68"]:
+            for thickness in thicknesses[material][energy]:
+                rows = []
+                for tally in ["14", "24", "34", "44", "54"]:
+                    file = f"{material}-{energy}-{thickness} {tally}.csv"
+                    df = pd.read_csv(os.path.join(source, file))
+                    df["Cells"] = tallies[tally]
+                    df = df.iloc[-1]
+                    rows.append(df)
+                df = pd.concat(rows, axis=1).T
+                simp_thick = thickness.split("-")[0]
+                outfile = os.path.join(dest, f"{material}-{energy}-{simp_thick}.csv")
+                df.to_csv(outfile, index=False)
 
 
-for material in ["cc", "fe"]:
-    for energy in ["43", "68"]:
-        for thickness in thicknesses[material][energy]:
-            rows = []
-            for tally in ["14", "24", "34", "44", "54"]:
-                file = f"{material}-{energy}-{thickness} {tally}.csv"
-                df = pd.read_csv(os.path.join(SOURCE, file))
-                df["Cells"] = tallies[tally]
-                df = df.iloc[-1]
-                rows.append(df)
-            df = pd.concat(rows, axis=1).T
-            simp_thick = thickness.split("-")[0]
-            outfile = os.path.join(DEST, f"{material}-{energy}-{simp_thick}.csv")
-            df.to_csv(outfile, index=False)
+if __name__ == "__main__":
+    import_bs(SOURCE, DEST)

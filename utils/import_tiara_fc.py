@@ -18,49 +18,65 @@ DEST = (
     r"D:\DATA\laghida\Documents\GitHub\JADE-RAW-RESULTS\ROOT\32c\Tiara-FC\mcnp\Raw_Data"
 )
 
-# dictionary for .csv
-tallies = {
-    "14": {"mat": "U238", "offset": "00"},
-    "24": {"mat": "Th232", "offset": "00"},
-    "34": {"mat": "U238", "offset": "20"},
-    "44": {"mat": "Th232", "offset": "20"},
-}
-thicknesses = {
-    "cc": {
-        "43": {"20": ["25", "50", "100"], "00": ["25", "50", "100"]},
-        "68": {"20": ["25", "50", "100", "150"], "00": ["25", "50", "100", "150"]},
-    },
-    "fe": {
-        "43": {
-            "20": ["00", "10", "20", "40", "70"],
-            "00": ["00", "10", "20", "40", "70"],
+
+def import_fc(source: os.PathLike, dest: os.PathLike):
+    """Import the Tiara-FC benchmark from JADE results to the WebbApp format.
+
+    Parameters
+    ----------
+    source : os.PathLike
+        original path to the JADE raw data .csv files.
+    dest : os.PathLike
+        destination path to the WebbApp format.
+    """
+    # dictionary for .csv
+    tallies = {
+        "14": {"mat": "U238", "offset": "00"},
+        "24": {"mat": "Th232", "offset": "00"},
+        "34": {"mat": "U238", "offset": "20"},
+        "44": {"mat": "Th232", "offset": "20"},
+    }
+    thicknesses = {
+        "cc": {
+            "43": {"20": ["25", "50", "100"], "00": ["25", "50", "100"]},
+            "68": {"20": ["25", "50", "100", "150"], "00": ["25", "50", "100", "150"]},
         },
-        "68": {
-            "20": ["20", "40", "70", "100", "130"],
-            "00": ["00", "20", "40", "70", "100"],
+        "fe": {
+            "43": {
+                "20": ["00", "10", "20", "40", "70"],
+                "00": ["00", "10", "20", "40", "70"],
+            },
+            "68": {
+                "20": ["20", "40", "70", "100", "130"],
+                "00": ["00", "20", "40", "70", "100"],
+            },
         },
-    },
-}
+    }
+
+    for material in ["cc", "fe"]:
+        for energy in ["43", "68"]:
+            for tally in ["14", "24", "34", "44"]:
+                offset = tallies[tally]["offset"]
+                detector = tallies[tally]["mat"]
+                rows = []
+                for thickness in thicknesses[material][energy][offset]:
+                    file = f"{material}-{energy}-{thickness}-00 {tally}.csv"
+                    try:
+                        df = pd.read_csv(os.path.join(source, file))
+                    except FileNotFoundError as e:
+                        if file in ["fe-43-00-00 44.csv", "fe-43-10-00 44.csv"]:
+                            continue
+                        else:
+                            raise e
+                    df["Cells"] = thickness
+                    df = df.iloc[-1]
+                    rows.append(df)
+                df = pd.concat(rows, axis=1).T
+                outfile = os.path.join(
+                    dest, f"{material}-{energy}-{detector}-{offset}.csv"
+                )
+                df.to_csv(outfile, index=False)
 
 
-for material in ["cc", "fe"]:
-    for energy in ["43", "68"]:
-        for tally in ["14", "24", "34", "44"]:
-            offset = tallies[tally]["offset"]
-            detector = tallies[tally]["mat"]
-            rows = []
-            for thickness in thicknesses[material][energy][offset]:
-                file = f"{material}-{energy}-{thickness}-00 {tally}.csv"
-                try:
-                    df = pd.read_csv(os.path.join(SOURCE, file))
-                except FileNotFoundError as e:
-                    if file in ["fe-43-00-00 44.csv", "fe-43-10-00 44.csv"]:
-                        continue
-                    else:
-                        raise e
-                df["Cells"] = thickness
-                df = df.iloc[-1]
-                rows.append(df)
-            df = pd.concat(rows, axis=1).T
-            outfile = os.path.join(DEST, f"{material}-{energy}-{detector}-{offset}.csv")
-            df.to_csv(outfile, index=False)
+if __name__ == "__main__":
+    import_fc(SOURCE, DEST)
