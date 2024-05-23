@@ -51,7 +51,16 @@ def result_available(lib: str, benchmark: str, code: str) -> bool:
         True if the raw data folder is already present, False otherwise
     """
     path = os.path.join(ROOT_DEST, lib, benchmark, code, "Raw_Data")
-    return os.path.exists(path)
+    if os.path.exists(path):
+        # If it is empty remove it
+        if len(os.listdir(path)) == 0:
+            shutil.rmtree(path)
+            return False
+        # if it is not empty return true
+        return True
+    else:
+        # if it does not exist return false
+        return False
 
 
 def sorted_listdir(directory) -> list[str]:
@@ -98,8 +107,12 @@ def copy_results(
     """
     dest = os.path.join(ROOT_DEST, lib, benchmark, code, "Raw_Data")
     if benchmark == "Tiara-BS":
+        if not os.path.exists(dest):
+            os.makedirs(dest)
         import_bs(src, dest)
     elif benchmark == "Tiara-FC":
+        if not os.path.exists(dest):
+            os.makedirs(dest)
         import_fc(src, dest)
     else:
         shutil.copytree(src, dest)
@@ -115,6 +128,7 @@ def copy_results(
 
 def main() -> None:
     """Main function to import all the results from the source to the destination"""
+    print("Importing computational results...")
     # First deal with computational benchmarks
     comp_path = os.path.join(SRC, "Single_Libraries")
     for lib in os.listdir(comp_path):
@@ -133,6 +147,7 @@ def main() -> None:
                         print(f"{lib} {benchmark} {code}")
                     # copy the missing results
                     else:
+                        print(f"{lib} {benchmark} {code}")
                         copy_results(
                             raw_data_folder,
                             lib,
@@ -146,6 +161,7 @@ def main() -> None:
     # get the list of folders by creation date. In this way the folder will be
     # copied the first time it is found (newer) and if repeated in older assessments
     # it will be ignored as it is already present
+    print("Importing experimental results...")
     already_printed = []
     exp_path = os.path.join(SRC, "Comparisons")
     for comparison_folder in sorted_listdir(exp_path):
@@ -170,6 +186,7 @@ def main() -> None:
                                 print(stringa)
                         # copy the missing results
                         else:
+                            print(f"{lib} {benchmark} {code}")
                             copy_results(
                                 os.path.join(raw_data_folder, lib),
                                 lib,
@@ -181,3 +198,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    print("Import completed")
