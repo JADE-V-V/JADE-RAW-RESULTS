@@ -1,14 +1,31 @@
+"""This script can be used to import all the results contained in a JADE 
+installation.
+
+user parameters are divided into optional and mandatory and are described
+through comments. For experimental data, multiple processing can be done of the
+same libraries. In this case, the script will only copy the newest data checking
+the folder date of creation.
+"""
+
 import os
 import shutil
 import json
 from import_tiara_bs import import_bs
 from import_tiara_fc import import_fc
 
-SRC = r"R:\AC_ResultsDB\Jade\04_JADE_latest_root\Tests\Post-Processing"
-ROOT_DEST = "ROOT"
-ONLY_SCREEN = False
-EXCLUDE_LIBRARIES = ["33c", "99c", "40c"]  # Libraries results that should be ignored
 
+# --- Mandatory user parameters ---
+# Source folder where the results are stored
+SRC = r"R:\AC_ResultsDB\Jade\04_JADE_latest_root\Tests\Post-Processing"
+# Destination folder where the results will be copied
+ROOT_DEST = "ROOT"
+# if true the files are not copied but a preview of the missing results is printed
+ONLY_SCREEN = False
+
+# --- Optional user parameters ---
+# exclude some libraries from the import. This libraries will be ignored
+EXCLUDE_LIBRARIES = []  # e.g. ["33c", "99c", "40c"]
+# This is used if an automatic metadata file needs to be added.
 LIB_NAMES = {
     "21c": "FENDL 2.1c",
     "30c": "FENDL 3.0",
@@ -21,13 +38,13 @@ LIB_NAMES = {
     "99c": "D1SUNED (FENDL 3.1d+EAF2007)",
     "exp": "experiment",
 }
-
+# This is used if an automatic metadata file needs to be added.
 BASE_METADATA = {
     "jade_version": "3.0.1",
-    "code": "MCNP",
+    "code": "MCNP",  # This will be replaced by the code name found in folder
     "code_version": "6.2",
-    "library": "ENDF",
-    "benchmark_name": "JEFF 3.3",
+    "library": "ENDF",  # This will be replaced by the lib name found in folder
+    "benchmark_name": "JEFF 3.3",  # This will be replaced by the lib name found in folder
     "benchmark_version": "1.0",
     "jade_run_version": "2.0.0",
 }

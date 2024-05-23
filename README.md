@@ -26,6 +26,8 @@ ROOT
 
 Some sanity checks are performed on the `metadata.json` keywords and values to ensure they are consistent with the allowed library names and with the folder structure they are inserted into (for more details check the [CI tests](./tests/metadata_test.py)).
 
+If a large set of data needs to be added, copying by hand each folder can become a tedious operation. [import_all.py](./utils/import_all.py) can be used to automatically scan a JADE > v3.0.0 post-processing folder, identify which set of raw data are not currently available in the
+database and add them to it.
 ### Exceptions
 #### Tiara-BS
 The .csv raw data structure in this benchmark is not compatible with JADE results. To correctly import them into this repository use this [import_tiara_bs.py](./utils/import_tiara_bs.py). 
