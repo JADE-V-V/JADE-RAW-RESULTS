@@ -36,6 +36,7 @@ LIB_NAMES = {
     "34y": "IRDFF II",
     "03c": "JEFF 3.3",
     "99c": "D1SUNED (FENDL 3.1d+EAF2007)",
+    "93c": "D1SUNED (FENDL 3.2b+TENDL2017)",
     "exp": "experiment",
 }
 # This is used if an automatic metadata file needs to be added.

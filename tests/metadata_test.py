@@ -12,6 +12,7 @@ LIB_NAMES = {
     "00c": "ENDFB VIII.0",
     "34y": "IRDFF II",
     "03c": "JEFF 3.3",
+    "93c": "D1SUNED (FENDL 3.2b+TENDL2017)",
     "99c": "D1SUNED (FENDL 3.1d+EAF2007)",
     "exp": "experiment",
 }
