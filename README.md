@@ -38,3 +38,27 @@ The .csv raw data structure in this benchmark is not compatible with JADE result
 
 #### Tiara-FC
 The .csv raw data structure in this benchmark is not compatible with JADE results. To correctly import them into this repository use this [import_tiara_fc.py](./utils/import_tiara_fc.py). 
+
+## metadata.json
+
+The `metadata.json` file contains important information about the results set. It's structured as a JSON object as seen for the example below.
+
+```json
+{
+    "jade_version": "3.0.0",
+    "code": "mcnp",
+    "code_version": "6.2",
+    "library": "FENDL 3.2b",
+    "benchmark_name": "ASPIS-Fe88",
+    "benchmark_version": "1.0",
+    "jade_run_version": "3.0.1"
+}
+```
+
+- `jade_version`: The version of JADE used to perform the **post processing**.
+- `code`: The transport code used to run the simulations (in this case, MCNP).
+- `code_version`: The version number of the transport code.
+- `library`: The name of the nuclear data library used.
+- `benchmark_name`: The name of the experimental or computational benchmark.
+- `benchmark_version`: The version of the benchmark in JADE.
+- `jade_run_version`: The version of JADE that was used to **run** the benchmark.
