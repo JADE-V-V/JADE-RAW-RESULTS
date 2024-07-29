@@ -51,14 +51,17 @@ The `metadata.json` file contains important information about the results set. I
     "library": "FENDL 3.2b",
     "benchmark_name": "ASPIS-Fe88",
     "benchmark_version": "1.0",
-    "jade_run_version": "3.0.1"
+    "jade_run_version": "3.0.1",
+    # optional, this makes sense only for d1s assessments
+    "transport_lib": "FENDL 3.1d",
 }
 ```
 
 - `jade_version`: The version of JADE used to perform the **post processing**.
 - `code`: The transport code used to run the simulations (in this case, MCNP).
 - `code_version`: The version number of the transport code.
-- `library`: The name of the nuclear data library used.
+- `library`: The name of the nuclear data library used. (activation lib in case of a d1s asessment)
 - `benchmark_name`: The name of the experimental or computational benchmark.
 - `benchmark_version`: The version of the benchmark in JADE.
 - `jade_run_version`: The version of JADE that was used to **run** the benchmark.
+- `transport_lib`: Optional, the transport lib used during a D1S assessment.

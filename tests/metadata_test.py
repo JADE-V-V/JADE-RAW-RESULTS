@@ -25,6 +25,7 @@ ALLOWED_KEYWORDS = [
     "benchmark_version",
     "code",
     "jade_run_version",
+    "transport_lib",
 ]
 
 
