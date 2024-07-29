@@ -69,3 +69,13 @@ class TestMetadata:
                     except AssertionError as e:
                         print(lib, benchmark, code)
                         raise e
+
+                    # Check the transport lib in an activation calculation
+                    try:
+                        transport_lib = metadata["transport_lib"]
+                        assert transport_lib in LIB_NAMES.values()
+                    except KeyError:
+                        if metadata["code"] == "d1s":
+                            # for d1s it is mandatory
+                            print("transport_lib is missing for d1s")
+                            assert False
