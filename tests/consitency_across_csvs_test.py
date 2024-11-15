@@ -23,11 +23,14 @@ class TestCSVConsistency():
                             raise e
 
     def test_same_length(self):
+        """This test checks if all the csvs across the different libraries (including
+        experimental data) have the same length.
+        """
         all_benchmarks = []
         for dirpath, dirnames, filenames in os.walk(self.root):
             if 'mcnp' in dirnames:
                 bench_name = os.path.basename(dirpath)
-                if bench_name not in ['Sphere']:
+                if bench_name not in ['Sphere', 'FNG-BKT']:
                     all_benchmarks.append(bench_name)
         
         for benchmark in all_benchmarks:
