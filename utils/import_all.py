@@ -24,13 +24,14 @@ ONLY_SCREEN = False
 
 # --- Optional user parameters ---
 # exclude some libraries from the import. This libraries will be ignored
-EXCLUDE_LIBRARIES = []  # e.g. ["33c", "99c", "40c"]
+EXCLUDE_LIBRARIES = ['40c', '92c', '99c']  # e.g. ["33c", "99c", "40c"]
 # This is used if an automatic metadata file needs to be added.
 LIB_NAMES = {
     "21c": "FENDL 2.1c",
     "30c": "FENDL 3.0",
     "31c": "FENDL 3.1d",
     "32c": "FENDL 3.2b",
+    "33c": "FENDL 3.2c",
     "70c": "ENDFB VII.0",
     "00c": "ENDFB VIII.0",
     "34y": "IRDFF II",
@@ -42,12 +43,12 @@ LIB_NAMES = {
 # This is used if an automatic metadata file needs to be added.
 BASE_METADATA = {
     "jade_version": "3.0.1",
-    "code": "MCNP",  # This will be replaced by the code name found in folder
+    "code": "mcnp",  # This will be replaced by the code name found in folder
     "code_version": "6.2",
     "library": "ENDF",  # This will be replaced by the lib name found in folder
     "benchmark_name": "JEFF 3.3",  # This will be replaced by the lib name found in folder
     "benchmark_version": "1.0",
-    "jade_run_version": "2.0.0",
+    "jade_run_version": "3.0.1",
 }
 
 
