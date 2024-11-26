@@ -1,4 +1,4 @@
-"""This script can be used to import all the results contained in a JADE 
+"""This script can be used to import all the results contained in a JADE
 installation.
 
 user parameters are divided into optional and mandatory and are described
@@ -7,12 +7,12 @@ same libraries. In this case, the script will only copy the newest data checking
 the folder date of creation.
 """
 
+import json
 import os
 import shutil
-import json
+
 from import_tiara_bs import import_bs
 from import_tiara_fc import import_fc
-
 
 # --- Mandatory user parameters ---
 # Source folder where the results are stored
@@ -31,6 +31,7 @@ LIB_NAMES = {
     "30c": "FENDL 3.0",
     "31c": "FENDL 3.1d",
     "32c": "FENDL 3.2b",
+    "32d": "FENDL 3.2c",
     "70c": "ENDFB VII.0",
     "00c": "ENDFB VIII.0",
     "34y": "IRDFF II",
