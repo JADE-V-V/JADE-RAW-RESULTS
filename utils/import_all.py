@@ -11,12 +11,13 @@ import json
 import os
 import shutil
 
+from import_fng_sic import import_sic
 from import_tiara_bs import import_bs
 from import_tiara_fc import import_fc
 
 # --- Mandatory user parameters ---
 # Source folder where the results are stored
-SRC = r"R:\AC_ResultsDB\Jade\04_JADE_latest_root\Tests\Post-Processing"
+SRC = r"R:\AC_ResultsDB\Jade\05_JADE_alex_bmarks\JADE-bmark_addition_1\Tests\Post-Processing"
 # Destination folder where the results will be copied
 ROOT_DEST = "ROOT"
 # if true the files are not copied but a preview of the missing results is printed
@@ -24,7 +25,7 @@ ONLY_SCREEN = False
 
 # --- Optional user parameters ---
 # exclude some libraries from the import. This libraries will be ignored
-EXCLUDE_LIBRARIES = []  # e.g. ["33c", "99c", "40c"]
+EXCLUDE_LIBRARIES = ["42c", "43c"]  # e.g. ["33c", "99c", "40c"]
 # This is used if an automatic metadata file needs to be added.
 LIB_NAMES = {
     "21c": "FENDL 2.1c",
@@ -133,6 +134,10 @@ def copy_results(
         if not os.path.exists(dest):
             os.makedirs(dest)
         import_fc(src, dest)
+    elif benchmark == "FNG-SiC":
+        if not os.path.exists(dest):
+            os.makedirs(dest)
+        import_sic(src, dest)
     else:
         shutil.copytree(src, dest)
     if metadata is not None:
