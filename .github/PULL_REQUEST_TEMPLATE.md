@@ -13,8 +13,8 @@ Fixes # (issue)
 
 Please provide the relevant details in the table below. Example of data library - 'FENDL 3.2b'.
 
-| Benchmark      | Data Library | MCNP | OpenMC | Serpent |
-|----------------|--------------|------|--------|---------|
-| Benchmark Name | Library Name | [ ]  | [ ]    | [ ]     |
-| Benchmark Name | Library Name | [ ]  | [ ]    | [ ]     |
-| Benchmark Name | Library Name | [ ]  | [ ]    | [ ]     |
+| Benchmark      | Data Library |           MCNP           |          OpenMC            |          Serpent            |
+|----------------|--------------|--------------------------|----------------------------|-----------------------------|
+| Benchmark Name | Library Name | <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>   |
+| Benchmark Name | Library Name | <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>   |
+| Benchmark Name | Library Name | <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>  |   <ul><li> [ ] </li></ul>   |
