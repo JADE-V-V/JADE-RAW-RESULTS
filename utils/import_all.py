@@ -1,4 +1,4 @@
-"""This script can be used to import all the results contained in a JADE 
+"""This script can be used to import all the results contained in a JADE
 installation.
 
 user parameters are divided into optional and mandatory and are described
@@ -7,12 +7,13 @@ same libraries. In this case, the script will only copy the newest data checking
 the folder date of creation.
 """
 
+import json
 import os
 import shutil
-import json
+
+from import_fng_sic import import_sic
 from import_tiara_bs import import_bs
 from import_tiara_fc import import_fc
-
 
 # --- Mandatory user parameters ---
 # Source folder where the results are stored
@@ -24,14 +25,14 @@ ONLY_SCREEN = False
 
 # --- Optional user parameters ---
 # exclude some libraries from the import. This libraries will be ignored
-EXCLUDE_LIBRARIES = ['40c', '92c', '99c']  # e.g. ["33c", "99c", "40c"]
+EXCLUDE_LIBRARIES = ["40c", "92c", "99c"]  # e.g. ["33c", "99c", "40c"]
 # This is used if an automatic metadata file needs to be added.
 LIB_NAMES = {
     "21c": "FENDL 2.1c",
     "30c": "FENDL 3.0",
     "31c": "FENDL 3.1d",
     "32c": "FENDL 3.2b",
-    "33c": "FENDL 3.2c",
+    "32d": "FENDL 3.2c",
     "70c": "ENDFB VII.0",
     "00c": "ENDFB VIII.0",
     "34y": "IRDFF II",
@@ -133,6 +134,10 @@ def copy_results(
         if not os.path.exists(dest):
             os.makedirs(dest)
         import_fc(src, dest)
+    elif benchmark == "FNG-SiC":
+        if not os.path.exists(dest):
+            os.makedirs(dest)
+        import_sic(src, dest)
     else:
         shutil.copytree(src, dest)
     if metadata is not None:
