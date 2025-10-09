@@ -5,5 +5,6 @@
     "library": "D1SUNED (FENDL 3.1d+EAF2007)",
     "code": "d1s",
     "jade_version": "3.1.1.dev181+g8162787",
-    "code_version": "6.2"
+    "code_version": "6.2",
+    "transport_lib": "FENDL 3.1d"
 }

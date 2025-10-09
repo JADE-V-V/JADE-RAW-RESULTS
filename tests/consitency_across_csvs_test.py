@@ -40,6 +40,7 @@ class TestCSVConsistency:
         experimental data) have the same length.
         """
         all_benchmarks = []
+        # Get all the benchmarks available
         for dirpath, dirnames, filenames in os.walk(self.root):
             if "d1s" not in dirpath and "metadata.json" in filenames:
                 bench_name = os.path.basename(dirpath)
@@ -54,6 +55,7 @@ class TestCSVConsistency:
             for dirpath, dirnames, filenames in os.walk(self.root):
                 if benchmark in dirpath:
                     if flag_ref:
+                        # Compare the length of the csvs with the reference
                         for name in filenames:
                             if name.endswith(".csv"):
                                 try:
@@ -68,6 +70,7 @@ class TestCSVConsistency:
                                     print(name, dirpath)
                                     raise e
                     else:
+                        # If it is the first library found, set the contents of the corresponding folder as a reference
                         flag_ref = True
                         csvs_reference = {}
                         for name in filenames:
