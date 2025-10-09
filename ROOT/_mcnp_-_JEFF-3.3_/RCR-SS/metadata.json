@@ -4,6 +4,6 @@
     "jade_run_version": "3.1.0",
     "library": "JEFF 3.3",
     "code": "mcnp",
-    "jade_version": "3.1.0",
-    "code_version": null
+    "jade_version": "4.3.0",
+    "code_version": "6.2"
 }

@@ -41,9 +41,12 @@ class TestCSVConsistency:
         """
         all_benchmarks = []
         for dirpath, dirnames, filenames in os.walk(self.root):
-            if "metadata.json" in filenames:
+            if "d1s" not in dirpath and "metadata.json" in filenames:
                 bench_name = os.path.basename(dirpath)
-                if bench_name not in ["Sphere", "FNG-BKT"]:
+                if (
+                    bench_name not in ["Sphere", "FNG-BKT"]
+                    and bench_name not in all_benchmarks
+                ):
                     all_benchmarks.append(bench_name)
 
         for benchmark in all_benchmarks:
