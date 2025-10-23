@@ -1,2 +1,2 @@
-Cells,Segments,Value,Error
-2,1,5.04275e-05,0.0006
+Cells,Dir,Segments,Multiplier,Value,Error
+2,0,1,0,5.04275e-05,0.0006

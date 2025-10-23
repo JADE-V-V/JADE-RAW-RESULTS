@@ -4,6 +4,6 @@
     "benchmark_name": "Sphere",
     "library": "ENDFB-VIII.0",
     "code": "mcnp",
-    "jade_version": "3.1.1.dev181+g8162787",
+    "jade_version": "4.3.0",
     "code_version": null
 }
