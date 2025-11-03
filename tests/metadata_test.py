@@ -1,22 +1,21 @@
-import os
-import pandas as pd
 import json
+import os
 
+import pandas as pd
 
-LIB_NAMES = {
-    "21c": "FENDL 2.1c",
-    "30c": "FENDL 3.0",
-    "31c": "FENDL 3.1d",
-    "32c": "FENDL 3.2b",
-    "32d": "FENDL 3.2c",
-    "70c": "ENDFB VII.0",
-    "00c": "ENDFB VIII.0",
-    "34y": "IRDFF II",
-    "03c": "JEFF 3.3",
-    "93c": "D1SUNED (FENDL 3.2b+TENDL2017)",
-    "99c": "D1SUNED (FENDL 3.1d+EAF2007)",
-    "exp": "experiment",
-}
+LIB_NAMES = [
+    "FENDL 2.1c",
+    "FENDL 3.0",
+    "FENDL 3.1d",
+    "FENDL 3.2b",
+    "FENDL 3.2c",
+    "ENDFB VII.0",
+    "ENDFB VIII.0",
+    "IRDFF II",
+    "JEFF 3.3",
+    "D1SUNED (FENDL 3.2b+TENDL2017)",
+    "D1SUNED (FENDL 3.1d+EAF2007)",
+]
 
 ALLOWED_KEYWORDS = [
     "jade_version",
@@ -35,48 +34,61 @@ class TestMetadata:
     root = os.path.join(os.path.dirname(os.path.dirname(root)), "ROOT")
 
     def test_metadata_keys(self):
-
+        """This test checks if all the metadata.json files across the different
+        libraries have valid keys.
+        """
         allfiles = []
+        paths = []
         for path, _, files in os.walk(self.root):
-            if os.path.basename(path) == "Raw_Data":
-                for file in files:
-                    if file.endswith(".json"):
-                        with open(
-                            os.path.join(path, file), "r", encoding="utf-8"
-                        ) as infile:
-                            data = json.load(infile)
-                            allfiles.append(data)
+            if "metadata.json" in files:
+                with open(
+                    os.path.join(path, "metadata.json"), "r", encoding="utf-8"
+                ) as infile:
+                    data = json.load(infile)
+                    allfiles.append(data)
+                    paths.append(path)
 
         df = pd.DataFrame(allfiles)
         for key in df.columns:
             assert key in ALLOWED_KEYWORDS
 
     def test_metadata_coherence(self):
-        for path, _, _ in os.walk(self.root):
-            if os.path.basename(path) == "Raw_Data":
+        """This test checks the coherence of the metadata.json files.
+        It ensures that the library, benchmark name and code match the
+        ones specified in the folder structure.
+        """
+        for path, _, files in os.walk(self.root):
+            if "metadata.json" in files:
                 pieces = path.split(os.sep)
-                lib = pieces[-4]
-                benchmark = pieces[-3]
-                code = pieces[-2]
-                if lib != "exp":
-                    with open(
-                        os.path.join(path, "metadata.json"), "r", encoding="utf-8"
-                    ) as infile:
-                        metadata = json.load(infile)
-                    try:
-                        assert metadata["library"] == LIB_NAMES[lib]
-                        assert metadata["benchmark_name"] == benchmark
-                        assert metadata["code"] == code
-                    except AssertionError as e:
-                        print(lib, benchmark, code)
-                        raise e
+                if (
+                    pieces[-2].split("-")[1].replace("_", "") == "JEFF"
+                    or pieces[-2].split("-")[1].replace("_", "") == "ENDFB"
+                ):
+                    lib = (
+                        pieces[-2].split("-")[1] + "-" + pieces[-2].split("-")[2]
+                    ).replace("_", "")
+                else:
+                    lib = pieces[-2].split("-")[1].replace("_", "")
+                benchmark = pieces[-1]
+                code = pieces[-2].split("-")[0].replace("_", "")
+                with open(
+                    os.path.join(path, "metadata.json"), "r", encoding="utf-8"
+                ) as infile:
+                    metadata = json.load(infile)
+                try:
+                    assert metadata["library"] == lib
+                    assert metadata["benchmark_name"] == benchmark
+                    assert metadata["code"] == code
+                except AssertionError as e:
+                    print(lib, benchmark, code)
+                    raise e
 
-                    # Check the transport lib in an activation calculation
-                    try:
-                        transport_lib = metadata["transport_lib"]
-                        assert transport_lib in LIB_NAMES.values()
-                    except KeyError:
-                        if metadata["code"] == "d1s":
-                            # for d1s it is mandatory
-                            print("transport_lib is missing for d1s")
-                            assert False
+                # Check the transport lib in an activation calculation
+                try:
+                    transport_lib = metadata["transport_lib"]
+                    assert transport_lib in LIB_NAMES
+                except KeyError:
+                    if metadata["code"] == "d1s":
+                        # for d1s it is mandatory
+                        print("transport_lib is missing for d1s")
+                        assert False
