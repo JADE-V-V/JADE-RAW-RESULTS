@@ -92,3 +92,38 @@ class TestMetadata:
                         # for d1s it is mandatory
                         print("transport_lib is missing for d1s")
                         assert False
+
+    def test_same_benchmark_version(self):
+        """This test checks if all the metadata.json files across the different
+        libraries have the same benchmark version for the same benchmark.
+        """
+        allfiles = []
+        paths = []
+        for path, _, files in os.walk(self.root):
+            if "metadata.json" in files:
+                with open(
+                    os.path.join(path, "metadata.json"), "r", encoding="utf-8"
+                ) as infile:
+                    data = json.load(infile)
+                    allfiles.append(data)
+                    paths.append(path)
+
+        df = pd.DataFrame(allfiles)
+        benchmarks = df["benchmark_name"].unique()
+        codes = df["code"].unique()
+        for benchmark in benchmarks:
+            for code in codes:
+                versions = df[
+                    (df["benchmark_name"] == benchmark) & (df["code"] == code)
+                ]
+                if len(versions) == 0:
+                    continue  # code not available for this benchmark, skip
+
+                version_numbers = versions["benchmark_version"].unique()
+                # important differences are only if major version
+                major_versions = [v.split(".")[0] for v in version_numbers]
+                if len(set(major_versions)) > 1:
+                    print(versions[["benchmark_version", "library"]])
+                    raise AssertionError(
+                        f"Different major benchmark versions for {benchmark} and {code}"
+                    )
