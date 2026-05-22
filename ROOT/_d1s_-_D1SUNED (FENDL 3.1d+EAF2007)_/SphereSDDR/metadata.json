@@ -4,7 +4,6 @@
     "benchmark_name": "SphereSDDR",
     "library": "D1SUNED (FENDL 3.1d+EAF2007)",
     "code": "d1s",
-    "jade_version": "4.3.0",
-    "code_version": null,
-    "transport_lib": "FENDL 3.1d"
+    "jade_version": "4.1.1.dev256+g735331b3f",
+    "code_version": null
 }
