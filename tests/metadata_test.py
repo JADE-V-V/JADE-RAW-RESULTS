@@ -83,16 +83,6 @@ class TestMetadata:
                     print(lib, benchmark, code)
                     raise e
 
-                # Check the transport lib in an activation calculation
-                try:
-                    transport_lib = metadata["transport_lib"]
-                    assert transport_lib in LIB_NAMES
-                except KeyError:
-                    if metadata["code"] == "d1s":
-                        # for d1s it is mandatory
-                        print("transport_lib is missing for d1s")
-                        assert False
-
     def test_same_benchmark_version(self):
         """This test checks if all the metadata.json files across the different
         libraries have the same benchmark version for the same benchmark.

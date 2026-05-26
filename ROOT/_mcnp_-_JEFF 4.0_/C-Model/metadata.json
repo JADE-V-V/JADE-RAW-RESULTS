@@ -1,5 +1,5 @@
 {
-    "benchmark_name": "C_Model",
+    "benchmark_name": "C-Model",
     "benchmark_version": "1.0",
     "jade_run_version": "4.1.1.dev246+g2e2b46bbc",
     "library": "JEFF 4.0",
