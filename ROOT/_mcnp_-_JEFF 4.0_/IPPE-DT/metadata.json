@@ -1,0 +1,9 @@
+{
+    "benchmark_name": "IPPE-DT",
+    "benchmark_version": "1.0",
+    "jade_run_version": "4.1.1.dev246+g2e2b46bbc",
+    "library": "JEFF 4.0",
+    "code": "mcnp",
+    "jade_version": "4.1.1.dev256+g735331b3f",
+    "code_version": "6.2"
+}

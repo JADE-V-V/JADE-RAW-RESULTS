@@ -13,7 +13,7 @@ import shutil
 
 # --- Mandatory user parameters ---
 # Source folder where the results are stored
-SRC = r"R:\AC_ResultsDB\Jade\06_JADEv4\raw_data"
+SRC = r"R:\AC_ResultsDB\Neutronics\04_NUCLEAR_DATA_JADE\06_JADEv4\raw_data"
 # Destination folder where the results will be copied
 ROOT_DEST = "ROOT"
 # if true the files are not copied but a preview of the missing results is printed
