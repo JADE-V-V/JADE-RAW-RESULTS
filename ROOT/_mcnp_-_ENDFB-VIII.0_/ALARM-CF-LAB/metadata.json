@@ -1,0 +1,9 @@
+{
+    "benchmark_name": "ALARM-CF-LAB",
+    "benchmark_version": "1.0",
+    "jade_run_version": "3.1.0",
+    "library": "ENDFB-VIII.0",
+    "code": "mcnp",
+    "jade_version": "4.4.1.dev0+gdaff5ec6f.d20260618",
+    "code_version": "6.2"
+}
