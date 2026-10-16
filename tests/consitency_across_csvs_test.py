@@ -56,11 +56,13 @@ class TestCSVConsistency:
                         "FNG-HCPB",
                         "FNG-W",
                         "IPPE-DT",
+                        "IPPE-CF",
                         "Oktavian",
                         "RCR-Sphere",
                         "RCR-SS",
                         "Tiara-BC",
                         "Tiara-FC",
+                        "ALARM-CF-LAB",
                     ]
                     and bench_name not in all_benchmarks
                 ):
