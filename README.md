@@ -21,13 +21,26 @@ ROOT
                              |----- [...].csv
 ```
 
-Some sanity checks are performed on the `metadata.json` keywords and values to ensure they are consistent with the allowed library names and with the folder structure they are inserted into (for more details check the [CI tests](./tests/metadata_test.py)).
+Some sanity checks are performed on the `metadata.json` keywords and values to ensure they are consistent with the allowed library names and with the folder structure they are inserted into (for more details check the [CI tests](./tests/checks/metadata_test.py)).
+The repository checks are in [tests/checks](./tests/checks/), and their
+regression tests are in [tests/check_tests](./tests/check_emulators/).
 
 Historical OpenMC results are stored in `openmc_archive/<openmc version>/`, with
 the same code/library and benchmark layout as `ROOT`. Each benchmark requires
 metadata with `code` set to `openmc` and `code_version` matching the archive
 folder. Metadata and CSV consistency checks run independently for each archive
 version; matching experimental data is taken from `ROOT`.
+
+Every OpenMC result in `ROOT` must have identical CSV and metadata files in the
+archive folder matching its `code_version`. When existing calculated results
+are overwritten, their `code_version` must be unchanged or newer than in the
+comparison revision. Experimental data is excluded because it has no code
+version. Versions are compared using Python's standard packaging version rules;
+missing or incomparable versions require metadata correction or review.
+
+CI compares pull requests with their base commit and pushes with the previous
+branch commit. Locally, the overwrite check compares tracked changes with
+`HEAD`; set `RESULTS_BASE_REF` to a Git revision to compare committed changes.
 
 If a large set of data needs to be added, copying by hand each folder can become a tedious operation. [import_all.py](./utils/import_all.py) can be used to automatically scan a JADE > v4.0.0 post-processing folder, identify which set of raw data are not currently available in the
 database and add them to it.

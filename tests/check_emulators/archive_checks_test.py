@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-from tests import consitency_across_csvs_test as csv_checks
-from tests import metadata_test as metadata_checks
+from tests.checks import consitency_across_csvs_test as csv_checks
+from tests.checks import metadata_test as metadata_checks
 
 
 @pytest.fixture
