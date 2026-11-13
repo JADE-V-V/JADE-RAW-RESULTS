@@ -23,6 +23,12 @@ ROOT
 
 Some sanity checks are performed on the `metadata.json` keywords and values to ensure they are consistent with the allowed library names and with the folder structure they are inserted into (for more details check the [CI tests](./tests/metadata_test.py)).
 
+Historical OpenMC results are stored in `openmc_archive/<openmc version>/`, with
+the same code/library and benchmark layout as `ROOT`. Each benchmark requires
+metadata with `code` set to `openmc` and `code_version` matching the archive
+folder. Metadata and CSV consistency checks run independently for each archive
+version; matching experimental data is taken from `ROOT`.
+
 If a large set of data needs to be added, copying by hand each folder can become a tedious operation. [import_all.py](./utils/import_all.py) can be used to automatically scan a JADE > v4.0.0 post-processing folder, identify which set of raw data are not currently available in the
 database and add them to it.
 

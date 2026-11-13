@@ -30,16 +30,13 @@ ALLOWED_KEYWORDS = [
 
 
 class TestMetadata:
-    root = os.path.abspath(__file__)
-    root = os.path.join(os.path.dirname(os.path.dirname(root)), "ROOT")
-
-    def test_metadata_keys(self):
+    def test_metadata_keys(self, result_root):
         """This test checks if all the metadata.json files across the different
         libraries have valid keys.
         """
         allfiles = []
         paths = []
-        for path, _, files in os.walk(self.root):
+        for path, _, files in os.walk(result_root):
             if "metadata.json" in files:
                 with open(
                     os.path.join(path, "metadata.json"), "r", encoding="utf-8"
@@ -52,12 +49,12 @@ class TestMetadata:
         for key in df.columns:
             assert key in ALLOWED_KEYWORDS
 
-    def test_metadata_coherence(self):
+    def test_metadata_coherence(self, result_root):
         """This test checks the coherence of the metadata.json files.
         It ensures that the library, benchmark name and code match the
         ones specified in the folder structure.
         """
-        for path, _, files in os.walk(self.root):
+        for path, _, files in os.walk(result_root):
             if "metadata.json" in files:
                 pieces = path.split(os.sep)
                 if (
@@ -83,13 +80,13 @@ class TestMetadata:
                     print(lib, benchmark, code)
                     raise e
 
-    def test_same_benchmark_version(self):
+    def test_same_benchmark_version(self, result_root):
         """This test checks if all the metadata.json files across the different
         libraries have the same benchmark version for the same benchmark.
         """
         allfiles = []
         paths = []
-        for path, _, files in os.walk(self.root):
+        for path, _, files in os.walk(result_root):
             if "metadata.json" in files:
                 with open(
                     os.path.join(path, "metadata.json"), "r", encoding="utf-8"
@@ -117,3 +114,42 @@ class TestMetadata:
                     raise AssertionError(
                         f"Different major benchmark versions for {benchmark} and {code}"
                     )
+
+
+def check_archive_metadata(version_dir):
+    required_keys = set(ALLOWED_KEYWORDS) - {"transport_lib"}
+    metadata_files = list(version_dir.rglob("metadata.json"))
+    assert metadata_files, f"No metadata found in {version_dir}"
+
+    for library in version_dir.iterdir():
+        if library.is_dir():
+            for benchmark in library.iterdir():
+                if benchmark.is_dir():
+                    assert (benchmark / "metadata.json").is_file(), (
+                        f"Missing metadata for {benchmark}"
+                    )
+
+    for csv in version_dir.rglob("*.csv"):
+        assert (csv.parent / "metadata.json").is_file(), f"Missing metadata for {csv}"
+
+    for metadata_file in metadata_files:
+        relative = metadata_file.relative_to(version_dir)
+        assert len(relative.parts) == 3, f"Unexpected metadata location: {metadata_file}"
+        with metadata_file.open(encoding="utf-8") as infile:
+            metadata = json.load(infile)
+        missing = required_keys - metadata.keys()
+        assert not missing, f"Missing metadata keys in {metadata_file}: {sorted(missing)}"
+        for key in required_keys:
+            value = metadata[key]
+            assert isinstance(value, str) and value.strip(), (
+                f"Invalid {key} in {metadata_file}: {value!r}"
+            )
+        assert metadata["code"] == "openmc", f"Not OpenMC metadata: {metadata_file}"
+        assert metadata["code_version"] == version_dir.name, (
+            f"OpenMC version mismatch in {metadata_file}: "
+            f"{metadata['code_version']!r} != {version_dir.name!r}"
+        )
+
+
+def test_archive_metadata(archive_version):
+    check_archive_metadata(archive_version)
