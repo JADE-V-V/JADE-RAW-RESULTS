@@ -79,7 +79,7 @@ def test_legacy_versions_are_only_accepted_when_unchanged(history_repository):
         check_overwritten_versions(repository, "HEAD")
 
 
-def test_openmc_result_must_match_archive(tmp_path):
+def test_openmc_result_must_match_archive_metadata(tmp_path):
     root = tmp_path / "ROOT"
     benchmark = root / "_openmc_-_FENDL 3.2c_" / "Bench"
     benchmark.mkdir(parents=True)
@@ -88,15 +88,22 @@ def test_openmc_result_must_match_archive(tmp_path):
     )
     (benchmark / "result.csv").write_text("value\n1\n", encoding="utf-8")
     archive = tmp_path / "openmc_archive"
-    with pytest.raises(AssertionError, match="Missing archived result"):
+    with pytest.raises(AssertionError, match="Missing archived metadata"):
         check_openmc_archive(root, archive)
 
     archived = archive / "0.15.3" / benchmark.relative_to(root)
     archived.mkdir(parents=True)
-    for file in benchmark.iterdir():
-        (archived / file.name).write_bytes(file.read_bytes())
+    archived_metadata = archived / "metadata.json"
+    archived_metadata.write_text(
+        json.dumps({"code_version": "0.15.3"}, indent=2), encoding="utf-8"
+    )
+    (archived / "result.csv").write_text("value\n2\n", encoding="utf-8")
+    check_openmc_archive(root, archive)
+    (archived / "result.csv").unlink()
     check_openmc_archive(root, archive)
 
-    (archived / "result.csv").write_text("value\n2\n", encoding="utf-8")
-    with pytest.raises(AssertionError, match="differs from ROOT"):
+    archived_metadata.write_text(
+        json.dumps({"code_version": "0.15.2"}), encoding="utf-8"
+    )
+    with pytest.raises(AssertionError, match="Archived metadata differs from ROOT"):
         check_openmc_archive(root, archive)

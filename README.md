@@ -31,8 +31,9 @@ metadata with `code` set to `openmc` and `code_version` matching the archive
 folder. Metadata and CSV consistency checks run independently for each archive
 version; matching experimental data is taken from `ROOT`.
 
-Every OpenMC result in `ROOT` must have identical CSV and metadata files in the
-archive folder matching its `code_version`. When existing calculated results
+Every OpenMC result in `ROOT` must have matching metadata in the archive folder
+corresponding to its `code_version`. This check trusts the metadata and does not
+compare or verify the presence of CSV files. When existing calculated results
 are overwritten, their `code_version` must be unchanged or newer than in the
 comparison revision. Experimental data is excluded because it has no code
 version. Versions are compared using Python's standard packaging version rules;

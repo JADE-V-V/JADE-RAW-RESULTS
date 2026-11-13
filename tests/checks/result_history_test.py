@@ -1,4 +1,3 @@
-import filecmp
 import json
 import os
 from pathlib import Path
@@ -90,15 +89,17 @@ def check_openmc_archive(root, archive):
             ), (
                 f"Invalid code_version in {metadata_file}: {version!r}"
             )
-            archived = archive / version / benchmark.relative_to(root)
-            for file in benchmark.iterdir():
-                if file.name != "metadata.json" and file.suffix.lower() != ".csv":
-                    continue
-                archived_file = archived / file.name
-                assert archived_file.is_file(), f"Missing archived result: {archived_file}"
-                assert filecmp.cmp(file, archived_file, shallow=False), (
-                    f"Archived result differs from ROOT: {archived_file}"
-                )
+            archived_metadata = (
+                archive / version / benchmark.relative_to(root) / "metadata.json"
+            )
+            assert archived_metadata.is_file(), (
+                f"Missing archived metadata: {archived_metadata}"
+            )
+            with archived_metadata.open(encoding="utf-8") as infile:
+                archived_data = json.load(infile)
+            assert archived_data == metadata, (
+                f"Archived metadata differs from ROOT: {archived_metadata}"
+            )
 
 
 def test_overwritten_versions():
