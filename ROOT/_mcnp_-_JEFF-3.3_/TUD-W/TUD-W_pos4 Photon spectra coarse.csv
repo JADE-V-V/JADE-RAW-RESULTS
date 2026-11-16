@@ -1,4 +1,2 @@
-Energy,Value,Error
-0.4 - 3,2.964473e-06,0.9444275858915349
-3 - 6,,
-6 - 10,,
+Energy,Value,Error,Lower energy,Upper energy
+0.4 - 3,2.964473e-06,0.9444275858915349,0.4,3.0

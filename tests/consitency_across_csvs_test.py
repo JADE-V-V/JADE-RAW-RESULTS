@@ -62,6 +62,7 @@ class TestCSVConsistency:
                         "RCR-SS",
                         "Tiara-BC",
                         "Tiara-FC",
+                        "TUD-W",
                         "ALARM-CF-LAB",
                     ]
                     and bench_name not in all_benchmarks
